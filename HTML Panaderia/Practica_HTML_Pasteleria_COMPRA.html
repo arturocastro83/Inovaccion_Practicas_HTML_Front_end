@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Práctica de HTML Pasteleria </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo del header */
+        header {
+            background-color:#5b3b62;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(253, 250, 255);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 1950px;
+            background: #92c5fc ;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #BDECB6;
+            height: 1950px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(12, 7, 7);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>
+        <img src="https://i.imgur.com/BvuJGq4.png" alt="Imagen de un pony" width=100px" height="100"align="left">Pasteleria Mi pequeño Pony
+        <h2></h2>
+    </p>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                
+                <a href="Practica_HTML_Pasteleria_HOME.html">Inicio</a><br> 
+                <a href="Practica_HTML_Pasteleria_PRODUCTOS.html">Productos</a> <br> 
+                <a href="Practica_HTML_Pasteleria_COMPRA.html">Compra en linea</a> <br> 
+                <a href="Practica_HTML_Pasteleria_HISTORIA.html">Nuestra historia</a> <br> 
+                <a href="Practica_HTML_Pasteleria_CONTACTO.html">Contactanos!</a> <br> 
+
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Bienvenido al sistema de compra por INTERNET</h1>
+            <h2 align="center">Selecciona el sabor de tu pastel</h2>
+                <br>
+                <div id="Sabores1">
+                <input type="checkbox" id="sabor1" name="sabor1" onchange="validacion('Sabores1', this)" />
+                <label for="sabor1">Chocolate............................... $280</label><br><br>
+                <img src="https://i.imgur.com/jds94Km.jpg" alt="Foto pastel de chocolate" width=200px" height="100"align="left"><br><br><br><br><br><br><br>
+                <input type="checkbox" id="sabor2" name="sabor2" onchange="validacion('Sabores1', this)" />
+                <label for="sabor2">Fresa...................................... $300</label><br><br>
+                <img src="https://i.imgur.com/s8jTvaK.jpg" alt="Foto pastel de fresa" width=200px" height="100"align="left"><br><br><br><br><br><br><br>
+                <input type="checkbox" id="sabor3" name="sabor3" onchange="validacion('Sabores1', this)" />
+                <label for="sabor3">Marmoleado............................ $150</label><br><br>
+                <img src="https://i.imgur.com/qwr5frO.jpg" alt="Foto pastel marmoleado" width=200px" height="100"align="left"><br><br><br><br><br><br><br>
+                <input type="checkbox" id="sabor4" name="sabor4" onchange="validacion('Sabores1', this)" />
+                <label for="sabor4">Zarzamora con queso.............$300</label><br><br>
+                <img src="https://i.imgur.com/RZ4wyY3.jpg" alt="Foto pastel marmoleado" width=200px" height="100"align="left"><br><br><br><br><br><br><br>
+                <input type="checkbox" id="sabor6" name="sabor6" onchange="validacion('Sabores1', this)" />
+                <label for="sabor6">Vainilla con fresa y queso.......$500</label><br><br>
+                <img src="https://i.imgur.com/S4QGWPM.jpg" alt="Foto pastel marmoleado" width=200px" height="100"align="left"><br><br><br><br><br><br><br>
+                <input type="checkbox" id="sabor7" name="sabor7" onchange="validacion('Sabores1', this)" />
+                <label for="sabor7">Pastel de frutas......................$190</label><br><br>
+                <img src="https://i.imgur.com/Ze3YSht.jpg" alt="Foto pastel marmoleado" width=200px" height="100"align="left"><br><br><br><br><br><br><br>
+                
+                <p>*En versión 3 leches el precio aumenta en $200*</p>
+                </div>
+
+
+                <hr>
+                <h2 align="center">Adornos para decorar tu pastel</h2>
+                <br>
+                <div id="adornos1">
+                <input type="checkbox" id="adorno1" name="adorno1" onchange="validacion2('adornos1', this)" />
+                <label for="adorno1">Chispas de chocolate........ $120</label><br><br>
+                <input type="checkbox" id="adorno2" name="adorno2" onchange="validacion2('adornos1', this)" />
+                <label for="adorno2">Durazno............................... $75</label><br><br>
+                <input type="checkbox" id="adorno3" name="adorno3" onchange="validacion2('adornos1', this)" />
+                <label for="adorno3">Chocolate blanco............... $100</label><br><br>
+                <input type="checkbox" id ="adorno4" name="adorno4" onchange="validacion2('adornos1', this)" />
+                <label for="adorno4">Nuez.................................. $175</label><br><br>
+                <input type="checkbox" id ="adorno5" name="adorno5" onchange="validacion2('adornos1', this)" />
+                <label for="adorno5">Fresas............................... $160</label><br><br>
+                
+                <hr>
+                <h2 align="center">Datos de envio</h2><br>
+                <li>
+                    <label for="name">Nombre completo:</label><br>
+                    <input type="text" id="name" name="user_name">
+                  </li><br>
+                  <li>
+                      <label for="tel1">Teléfono de contacto:</label><br>
+                      <input type="tel" id="tel1" name="tel1" maxlength="10">
+                  </li><br>
+                  <li>
+                    <label for="correo1">Correo electrónico:</label><br>
+                    <input type="email" id="correo1" name="correo1">
+                  </li><br>
+                  <li>
+                    <label for="adrs">Direccion con codigo postal:</label><br>
+                    <textarea id="text" name="user_adress" cols="50" rows="1" ></textarea>
+                  </li><br>
+                  <li>
+                     <label for="msg">¿Algun dedicatoria o comentario adicional sobre la entrega?:</label><br>
+                     <textarea cols="50" rows="3"></textarea>
+                     </li><br>
+                        <div class="contenedor">
+                            </div>
+                            <button class="centrado" onClick="alert('¡Muchas gracias por tu compra!')">Finalizar compra</button>
+                
+        </article>
+    </section>
+
+    <footer>
+        <p>Derechos reservados  2022 ®  Pasteleria Mi pequeño Pony Av. Mario Colín No. 10 Col. Rancho San Antonio, Tlalnepantla, Edo. de México c.p. 54070  Telefono: 55 5390 5894 <br><br> Abierto de Lunes a Domingo de 8:00 am a 8:00 pm </p>  
+    </footer>
+
+</body>
+
+</html>

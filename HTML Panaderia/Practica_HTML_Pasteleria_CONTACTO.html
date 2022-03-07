@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Práctica de HTML Pasteleria </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo del header */
+        header {
+            background-color:#5b3b62;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(253, 250, 255);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 500px;
+            background: #92c5fc ;
+            padding: 0px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #BDECB6;
+            height: 500px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(12, 7, 7);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <p>
+        <img src="https://i.imgur.com/BvuJGq4.png" alt="Imagen de un pony" width=100px" height="100"align="left">Pasteleria Mi pequeño Pony
+        <h2></h2>
+    </p>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                
+                <a href="Practica_HTML_Pasteleria_HOME.html">Inicio</a><br> 
+                <a href="Practica_HTML_Pasteleria_PRODUCTOS.html">Productos</a> <br> 
+                <a href="Practica_HTML_Pasteleria_COMPRA.html">Compra en linea</a> <br> 
+                <a href="Practica_HTML_Pasteleria_HISTORIA.html">Nuestra historia</a> <br> 
+                <a href="Practica_HTML_Pasteleria_CONTACTO.html">Contactanos!</a> <br> 
+
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Tu opinion es importante!</h1>
+            <p>Tomate unos minutos para dejarnos tus comentarios.</p>
+
+            <h4>Tus detalles<h4>
+
+                <label for="Input1"> Nombre completo</label><br>
+                <input type="text" id="Input1" name="Input1"><br>
+
+                <label for="correo1">Correo electronico</label><br>
+                <input type="email" id="correo1" name="correo1"><br>
+
+                <label for="correo1">¿Ha comprado en nuestra pagina?</label><br>                
+                <input type="radio" id="Si" name="salsas" value="Si">
+                <label for="Si">Si</label><br>
+                <input type="radio" id="No" name="salsas" value="No">
+                <label for="No">No</label><br>
+
+                <h4>Dejanos tu mensaje:<h4></h4>
+                <textarea name="comentario" rows="5" cols="50">Escribe tu comentario: </textarea>
+
+        </article>
+    </section>
+
+    <footer>
+        <p>Derechos reservados  2022 ®  Pasteleria Mi pequeño Pony Av. Mario Colín No. 10 Col. Rancho San Antonio, Tlalnepantla, Edo. de México c.p. 54070  Telefono: 55 5390 5894 <br><br> Abierto de Lunes a Domingo de 8:00 am a 8:00 pm </p>  
+    </footer>
+
+</body>
+
+</html>
